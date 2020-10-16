@@ -1,0 +1,65 @@
+main {
+    .procedures {
+        .container {
+            .sec-title {
+                font-size: 33px;
+                color: $h-color;
+                margin-bottom: 32px;
+            }
+            p {
+                color: $p-color;
+                margin-bottom: 0;
+            }
+            .post {
+                margin-top: 70px;
+                border: 1px solid $border-color;
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 30px;
+                &:hover {
+                    box-shadow: 0 5px 20px $box-shadow-color;
+                }
+                > img {
+                    margin-bottom: 35px;
+                    display: block;
+                    width: 100%;
+                    // height: auto;
+                }
+                h4 {
+                    a {
+                        color: $link-color;
+                        font-size: 22px;
+                    }
+                }
+                p {
+                    color: $p-color;
+                    margin-bottom: 39px;
+                }
+                .btn-primary {
+                    text-transform: uppercase;
+                    @include border-radius(50px);
+                    padding: 15px 30px;
+                    background-color: $btn-color;
+                    border: none;
+                    &:hover {
+                        background-color: #212529;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .procedures {
+            .container {
+                .sec-title {
+                    font-size: 42px;
+                    margin-bottom: 32px;
+                }
+            }
+        }
+    }
+}

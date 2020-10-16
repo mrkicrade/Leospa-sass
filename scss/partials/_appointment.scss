@@ -1,0 +1,68 @@
+main {
+    .appointment {
+        .appointment-wrap {
+            background-color: $carousel-color;
+            .figure {
+                > img {
+                    display: none;
+                } 
+            }
+            .appointment-form {
+                .input-field {
+                    text-transform: uppercase;
+                    width: 100%;    
+                    border: none;
+                    border-bottom: 1px solid $border-bottom-color;
+                    background-color: transparent;
+                    color: #999;
+                    display: block;
+                    font-size: 12px;
+                    font-weight: 500;
+                    padding: 10px 0;
+                    margin-bottom: 30px;
+                }
+                select {
+                    -webkit-appearance: none;
+                }
+                .btn-primary {
+                    background: $btn-color;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 0.8;
+                    text-transform: uppercase;
+                    min-width: 170px;
+                    padding: 20px 15px;
+                    border: none;
+                    @include border-radius(50px);
+                }
+                &:hover {
+                    color: $btn-hover-color;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1200px){
+    main {
+        .appointment {
+            .appointment-wrap {
+                display: flex;
+                .figure {
+                    > img {
+                        display: block;
+                    }
+                }
+                .appointment-form {
+                    padding-left: 100px;
+                    form {
+                        max-width: 650px;
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}

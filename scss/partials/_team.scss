@@ -1,0 +1,127 @@
+main {
+    .team {
+        .section-heading {
+            margin-bottom: 70px;
+            text-align: center;
+            .sec-title {
+                color: $h-color;
+                margin-bottom: 32px;
+                font-weight: 800;
+            }
+            p {
+                color: $p-color;
+                margin-bottom: 0;
+            }
+        }
+        .single-memb {
+            position: relative;
+            margin-bottom: 30px;
+            width: 100%;
+            > img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .memb-info {
+                background-color: $memb-info-color;  
+                padding: 20px 15px;  
+                text-align: center;
+                box-shadow: 0 5px 20px $box-shadow-color;
+                h6 {
+                    color: $memb-h-color;
+                    font-size: 22px;
+                    margin-bottom: 0;
+                }
+                span {
+                    display: block;
+                    margin-bottom: 15px;
+                }
+                .memb-social {
+                    visibility: hidden;
+                    .soc-net {
+                        text-align: center;
+                        li {
+                            display: inline-block;
+                            &:not(:last-child) {
+                                margin-right: 10px;
+                            }
+                            a {
+                                display: block;
+                                width: 40px;
+                                height: 40px;
+                                text-indent: -9999px;
+                                background-size: cover;
+                                -webkit-transition: all .3s;
+                                -moz-transition: all .3s;
+                                transition: all .3s;
+                                &.fb {
+                                    background-image: url("../images/social/facebook.png");
+                                }
+                                &.in {
+                                    background-image: url("../images/social/instagram.png");
+                                }
+                                &.tw {
+                                    background-image: url("../images/social/twitter.png");
+                                }
+                                &.yt {
+                                    background-image: url("../images/social/youtube.png");
+                                }
+                                &:hover {
+                                    opacity: .8;
+                                }
+                            }    
+                        }
+                    }
+                }
+            }
+            #memb-info-first {
+                background-color: transparent;
+            }
+            &:hover {
+                .memb-info {
+                    #memb-social-first {
+                        visibility: visible;
+                    }
+                }
+            }
+            #memb-info-second {
+                background-color: transparent;
+            }
+            &:hover {
+                .memb-info {
+                    #memb-social-second {
+                        visibility: visible;
+                    }
+                }
+            }
+            #memb-info-third {
+                background-color: transparent;
+            }
+            &:hover {
+                .memb-info {
+                    #memb-social-third {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    main {
+        .team {
+            .single-memb {
+                .memb-info {
+                    .memb-social {
+                        .soc-net {
+                            li:not(:last-child) {
+                                margin-right: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

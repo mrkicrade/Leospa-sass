@@ -1,0 +1,86 @@
+footer {
+    background-color: $carousel-color;
+    padding: 80px 0 60px;
+    .container {
+        .footer-nav {
+            display: none;
+        }
+        .footer-social {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            .footer-soc-net {
+                text-align: center;
+                li {
+                    display: inline-block;
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    }
+                    a {
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        text-indent: -9999px;
+                        background-size: cover;
+                        -webkit-transition: all .3s;
+                        -moz-transition: all .3s;
+                        transition: all .3s;
+                        &.fb {
+                            background-image: url("../images/social/facebook.png");
+                        }
+                        &.in {
+                            background-image: url("../images/social/instagram.png");
+                        }
+                        &.tw {
+                            background-image: url("../images/social/twitter.png");
+                        }
+                        &.yt {
+                            background-image: url("../images/social/youtube.png");
+                        }
+                        &:hover {
+                            opacity: .8;
+                        }
+                    } 
+                }
+            }
+        }
+        .copyright {
+            color: $p-color;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            a {
+                color: $btn-color;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    footer {
+        .container {
+            .footer-nav {
+                margin-top: 30px;
+                display: block;
+                .footer-soc-net {
+                    li {
+                        display: inline-block;
+                        &:not(:last-child) {
+                            margin-right: 10px;
+                        }
+                        a {
+                            color: $link-color;
+                            text-transform: uppercase;
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 600;
+                            padding: 0 20px;
+                            &:hover {
+                                color: $btn-color;
+                            }
+                        }
+                    }    
+                }
+            }
+        }
+    }
+}
