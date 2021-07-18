@@ -8,7 +8,7 @@ main {
                     li {
                         width: 10px;
                         height: 10px;
-                        @include border-radius(100%);
+                        border-radius: 100%;
                         background-color: $indicators-color;
                     }
                 }
@@ -29,7 +29,7 @@ main {
                             }
                             .client-info {
                                 > img {
-                                    @include border-radius(50px);
+                                    border-radius: 50px;
                                     margin-bottom: 22px;
                                     height: 76px;
                                     width: 76px;

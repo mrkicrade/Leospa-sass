@@ -1,0 +1,14 @@
+@media(min-width: 768px) {
+  .nav-link {
+    color: $link-color !important; // sass-lint:disable-line no-important
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 20px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $btn-color !important; // sass-lint:disable-line no-important
+    }
+  }
+}

@@ -1,73 +1,80 @@
-main {
-    .about {
-        .img {
-            margin-bottom: 165px;
-        }
-        position: relative;
-        .flower-2 {
-            display: none;
-        }
-        .flower-1, .flower-2 {
-            position: absolute;
-        }
-        .flower-1 {
-            left: 16%;
-            max-width: 160px;
-        }
-        .abt {
-            max-width: none;
-            > img {
-                position: absolute;
-                left: 43%;
-                top: -60%;
-            }
-            .tagline {
-                color: $p-color;
-                font-size: 20px;
-                font-weight: 400;
-                line-height: .8;
-                text-transform: uppercase;
-                margin-bottom: 27px;
-                display: block;
-            }
-            .sec-title {
-                color: $h-color;
-                margin-bottom: 32px;
-                font-size: 33px;
-            }
-            p {
-                color: $p-color;
-                font-weight: 400;
-            }
-        }
-        .read-more {
-            margin-top: 50px;
-            .btn-primary {
-                width: 170px;
-                background-color:  #ff817e;
-                border: none;
-                @include border-radius(50px);
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 0.8;
-                text-transform: uppercase;
-                padding: 20px 15px;
-                &:hover {
-                    color: black;
-                }
-            }
-        }
+.about {
+  position: relative;
+
+  &__img {
+    margin-bottom: 165px;
+
+    &__flower-rose {
+      left: 16%;
+      min-width: 160px;
+      position: absolute;
     }
+
+    &__flower-jasmine {
+      display: none;
+      position: absolute;
+    }
+  }
+
+  &__abt {
+    max-width: none;
+
+    > img {
+      left: 70%;
+      position: absolute;
+      top: 0;
+    }
+
+    &__tagline {
+      color: $p-color;
+      display: block;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: .8;
+      margin-bottom: 27px;
+      text-transform: uppercase;
+    }
+
+    &__sec-title {
+      color: $h-color;
+      font-size: 33px;
+      margin-bottom: 32px;
+    }
+
+    &__desc {
+      color: $p-color;
+      font-weight: 400;
+    }
+  }
+
+  &__read-more {
+    margin-top: 50px;
+
+    &__btn {
+      @include button($btn-color, 1px solid $btn-color, 50px, 20px 15px, none, uppercase);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: .8;
+      width: 170px;
+
+      &:hover {
+        background-color: $memb-info-color;
+        border-color: $btn-color;
+        color: $btn-color;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
-@media(min-widtH: 992px){
-    main {
-        .about {
-            .flower-2 {
-                display: block;
-                left: 65%;
-                top: 47%;
-            }
-        }
+@media(min-widtH: 992px) {
+  .about {
+    &__img {
+      &__flower-2 {
+        display: block;
+        left: 65%;
+        top: 47%;
+      }
     }
+  }
 }

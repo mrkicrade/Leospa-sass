@@ -1,70 +1,82 @@
-main {
-    .service {
+.service {
+  display: block;
+  margin-bottom: 40px;
+  padding: 50px 0;
+  position: relative;
+  width: 100%;
+
+  &__two {
+    display: none;
+  }
+
+  &__free {
+    display: none;
+  }
+
+  &__four {
+    display: none;
+  }
+
+  .container {
+    padding: 0;
+
+    &__single-service {
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+
+      >img {
         width: 100%;
-        display: block;
-        position: relative;
-        padding: 50px 0;
-        margin-bottom: 40px;
-        #two, #free, #four {
-            display: none;
+      }
+
+      &__service-hover {
+        background-color: $navbar-toggler-color;
+        bottom: -100%;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        transition: .5s;
+        // height: 490px;
+        width: 100%;
+
+        >img {
+          position: absolute;
+          text-align: center;
+          top: 50%;
+          transform: translateY(-50%);
         }
-        .container {
-            padding: 0;
-            .single-service {
-                overflow: hidden;
-                position: relative;
-                cursor: pointer;
-                >img {
-                    width: 100%;
-                }
-                .service-hover {
-                    position: absolute;
-                    bottom: -100%;
-                    -webkit-transition: all .5s;
-                    -moz-transition: all .5s;
-                    transition: all .5s;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    // height: 490px;
-                    text-align: center;
-                    background-color: rgba(255, 129, 126, 0.9);
-                    >img {
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        text-align: center;
-                    }
-                    > span {
-                        position: absolute;
-                        top: 60%;
-                        transform: translateX(-4%);
-                        text-align: center;
-                        color: #fff;
-                        display: block;
-                        font-weight: 700;
-                        font-family: 'Rufina', serif;
-                        left: 46%;
-                    }
-                }
-            }
-            #one {
-                display: block;
-                &:hover {
-                    #sh-one {
-                        bottom: 0;
-                    }
-                }  
-            }
-            .col-lg-3 {
-                padding-right: 0;
-            }
+
+        > span {
+          color: #fff;
+          display: block;
+          font-family: 'Rufina', serif;
+          font-weight: 700;
+          left: 46%;
+          position: absolute;
+          text-align: center;
+          top: 60%;
+          transform: translateX(-4%);
         }
+      }
     }
+    .col-lg-3 {
+      padding-right: 0;
+    }
+  }
+
+  &__one {
+    display: block;
+
+    &:hover {
+      &__hover {
+        bottom: 0;
+      }
+    }
+  }
 }
 
 @media(min-width: 576px){
-    main {
         .service {
             .container {
                 .single-service {
@@ -76,12 +88,10 @@ main {
                 }
             }
         }
-    }
 }
 
 
 @media(min-width: 768px){
-    main {
         .service {
             #two {
                 display: block;
@@ -113,11 +123,9 @@ main {
                 }
             }
         }
-    }
 }
 
 @media(min-width: 992px){
-    main {
         .service {
             #four {
                 display: block;
@@ -128,11 +136,9 @@ main {
                 }
             }
         }
-    }
 }
 
 @media(min-width: 1600px){
-    main {
         .service {
             .container {
                 .single-service {
@@ -144,5 +150,4 @@ main {
                 }
             }
         }
-    }
 }

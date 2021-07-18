@@ -2,28 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #fff;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 27px;
-    color: #6c6c6f;
+  background-color: #fff;
+  color: #6c6c6f;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px;
 }
 
 a {
-	// transition: all 300ms ease-in-out;
-	&:hover, &:focus {
-		text-decoration: none;
-		outline: 0px;
-	}
-	
+  text-decoration: none;
+  transition: 300ms ease-in-out;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Rufina', serif;
 	font-weight: 700;

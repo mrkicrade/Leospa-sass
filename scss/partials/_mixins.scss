@@ -1,5 +1,17 @@
-@mixin border-radius($radius) {
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
-	border-radius: $radius; 
+@mixin title($color, $font-family, $font-weight, $letter-spacing, $margin-bottom, $text-transform) {
+  color: $color;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  margin-bottom: $margin-bottom;
+  text-transform: $text-transform;
+}
+
+@mixin button($bg-color, $border, $border-radius, $padding, $text-decoration, $text-transform) {
+  background-color: $bg-color;
+  border: $border;
+  border-radius: $border-radius;
+  padding: $padding;
+  text-decoration: $text-decoration;
+  text-transform: $text-transform;
 }

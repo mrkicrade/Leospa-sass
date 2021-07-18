@@ -1,0 +1,26 @@
+{
+  "name": "index.html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrkicrade/Leospa-sass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrkicrade/Leospa-sass/issues"
+  },
+  "homepage": "https://github.com/mrkicrade/Leospa-sass#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "sass-lint": "^1.13.1"
+  }
+}

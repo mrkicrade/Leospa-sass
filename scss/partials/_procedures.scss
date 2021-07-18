@@ -37,7 +37,7 @@ main {
                 }
                 .btn-primary {
                     text-transform: uppercase;
-                    @include border-radius(50px);
+                    border-radius: 50px;
                     padding: 15px 30px;
                     background-color: $btn-color;
                     border: none;

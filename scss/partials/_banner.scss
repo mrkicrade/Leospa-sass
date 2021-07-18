@@ -1,75 +1,79 @@
-main {
-    .banner {
-        padding: 8% 0;
-        position: relative;
-        .spa-image {
-            width: 43.4% !important;
-            position: absolute;
-            top: -85px;
-            right: 0;
-        }
-        // background: url(../images/leaf.png) no-repeat left center / 12.5%; 
-        background-image: url(../images/leaf.png);
-        background-repeat: no-repeat;
-        background-position-x: left;
-        background-position-y: center;
-        background-size: 12.5%;
-    
-        span {
-            color: $btn-color;
-            text-transform: uppercase;
-            font-family: 'Rufina', serif;
-            letter-spacing: 1.5px !important;
-            margin-bottom: 20px;
-            font-weight: 400;
-        }
+.banner {
+  background-image: url('../images/leaf.png');
+  background-position-x: left;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 12.5%;
+  padding: 8% 0;
+  position: relative;
 
-        h2 {
-            color: $h-color;
-            font-size: 49px;
-            line-height: 60px;
-            margin-top: 25px;
-        }
-
-        p {
-            color: $text-color;
-            margin-bottom: 50px;
-            margin-top: 17px;
-        }
-
-        .btn-primary {
-            text-transform: uppercase;
-            border-radius: 0;
-            padding: 15px 30px;
-            background-color: $btn-color;
-            border: none;
-            &:hover {
-                color: #212529;
-                text-decoration: none;
-            }
-        }
-        .video-btn {
-            color: $text-color;
-            margin-left: 15px;
-            &:hover {
-                color: $btn-color;
-            }
-        }
+  &__spa-image {
+    position: absolute;
+    right: 0;
+    top: -103px;
+    width: 43.4% !important; // sass-lint:disable-line no-important
     }
+  // background: url(../images/leaf.png) no-repeat left center / 12.5%; 
+
+  &__title {
+    @include title($btn-color, 'Rufina', 400, 1.5px, 20px, uppercase);
+  }
+
+  &__heading {
+    color: $h-color;
+    font-size: 49px;
+    line-height: 60px;
+    margin-top: 25px;
+  }
+
+  &__desc {
+    color: $text-color;
+    margin-bottom: 50px;
+    margin-top: 17px;
+  }
+
+  &__btn {
+    @include button($btn-color, 1px solid $btn-color, 50px, 15px 10px, none, uppercase);
+
+    &:hover {
+      background-color: $memb-info-color;
+      border-color: $btn-color;
+      color: $btn-color;
+      text-decoration: none;
+    }
+  }
+
+  &__video-btn {
+    color: $text-color;
+    margin-left: 15px;
+
+    &:hover {
+      color: $btn-color;
+    }
+
+    &__title-play {
+      @include title($btn-color, 'Rufina', 400, 1.5px, 20px, uppercase);
+      font-size: 14px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
-@media(max-width: 767px){
-    .banner {
-        .spa-image {
-            display: none;
-        }
+@media(max-width: 767px) {
+  .banner {
+    &__spa-image {
+      display: none;
     }
+  }
 }
 
-@media(min-width: 768px){
-    .banner {
-        .spa-image {
-            display: block !important;
-        }
+@media(min-width: 768px) {
+  .banner {
+    &__spa-image {
+      display: block !important; // sass-lint:disable-line no-important
     }
+  }
 }

@@ -1,81 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leospa</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <!-- Main Header -->
     <header class="main-header">
         <div class="container">
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-            </div>
-            <div class="header-nav ml-auto">
-                <!-- Navigation -->
-                <nav class="navbar navbar-expand-md navbar-light bg-light">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Leospa"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Feature</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Service</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Feature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
                         </ul>
                     </div>
-                    </nav>
-                <!-- Navigation End -->
-            </div>
+                </div>
+            </nav>
         </div>
     </header>
     <!-- Main Header End -->
 
     <!-- Main -->
     <main>
-
         <!-- Section Banner -->
         <section class="banner">
             <!-- Spa Image -->
-            <div class="spa-image">
+            <div class="banner__spa-image">
                 <img src="images/spa.png" class="img-fluid" alt="Spa Image">
             </div>
             <!-- Spa image End -->
 
             <!-- Container -->
             <div class="container">
-               <div class="row">
-                   <div class="col-md-9 col-lg-6">
-                        <span>spa & beauty center</span>      
-                        <h2>Beauty and success starts here.</h2>
-                        <p>Together creeping heaven upon third dominion be upon won't darkness rule behold it created good saw after she'd Our set living.</p>
-                        <a href="#" class="btn btn-primary"><strong>reserve now</strong></a>
-                        <a class="video-btn" data-fancybox href="https://www.youtube.com/watch?v=QWUPm0ND7HY">
-                            <i class="ti-control-play"></i>
-                            <strong>Watch our story</strong>
+                <div class="row">
+                    <div class="col-md-9 col-lg-6">
+                        <span class="banner__title">spa & beauty center</span>
+                        <h2 class="banner__heading">Beauty and success starts here</h2>
+                        <p class="banner__desc">Together creeping heaven upon third dominion be upon won't darkness rule
+                            behold it created
+                            good saw after she'd Our set living.</p>
+                        <a href="#" class="btn btn-primary banner__btn"><strong>reserve now</strong></a>
+                        <a class="banner__video-btn" data-fancybox href="https://www.youtube.com/watch?v=QWUPm0ND7HY">
+                            <strong class="banner__video-btn__title-play">Watch our story</strong>
                         </a>
-                   </div>
-               </div> 
+                    </div>
+                </div>
             </div>
             <!-- Container End -->
         </section>
@@ -83,21 +79,25 @@
 
         <!-- Section About -->
         <section class="about">
-            <div class="img">
-                <img src="images/china-rose.png" alt="" class="flower-1 img-fluid">
-                <img src="images/jasmine.png" alt="" class="flower-2 img-fluid">
+            <div class="about__img">
+                <img src="images/china-rose.png" alt="" class="about__img__flower-rose img-fluid">
+                <img src="images/jasmine.png" alt="" class="about__img__flower-jasmine img-fluid">
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="abt col-md-12 col-lg-10 text-center m-auto">
+                    <div class="about__abt col-md-12 col-lg-10 text-center mx-auto">
                         <img src="images/butterfly.png" class="img-fluid" alt="">
-                        <span class="tagline">About our spa center</span>
-                        <h3 class="sec-title"><strong>Come and you will be Inspired!</strong></h3>
-                        <p>It’s the end of summer the sweltering heat makes human sweat in the night and makes the plants and trees wilt even in the moonlit nights. The eastern wind breeze brings an eerie feeling, that the monsoon clouds are soon coming, there is a strange silence in the ears, the sky gets darker and darker</p>
+                        <span class="about__abt__tagline">About our spa center</span>
+                        <h3 class="about__abt__sec-title"><strong>Come and you will be Inspired!</strong></h3>
+                        <p class="about__abt__desc">It’s the end of summer the sweltering heat makes human sweat in the
+                            night and makes the
+                            plants and trees wilt even in the moonlit nights. The eastern wind breeze brings an eerie
+                            feeling, that the monsoon clouds are soon coming, there is a strange silence in the ears,
+                            the sky gets darker and darker</p>
                     </div>
                 </div>
-                <div class="read-more text-center">
-                    <a href="index.html" class="btn btn-primary"><strong>Read more</strong></a>
+                <div class="about__read-more text-center">
+                    <a href="index.html" class="btn btn-primary about__read-more__btn"><strong>Read more</strong></a>
                 </div>
             </div>
         </section>
@@ -109,38 +109,10 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-3">
                         <!-- Single Service -->
-                        <div id="one" class="single-service">
+                        <div id="one" class="service__single-service service__one">
                             <img src="images/service/1.jpg" alt="">
                             <!-- Service Hover -->
-                            <div id="sh-one" class="service-hover">
-                                <img src="images/icons/1.png" alt="">
-                                <span>Body Treatment</span>
-                            </div>
-                            <!-- Service Hover End -->
-                        </div>
-                        <!-- Single Service End -->
-                    </div>    
-
-                    <div class="col-sm-12 col-md-4 col-lg-3">
-                        <!-- Single Service -->
-                        <div id="two" class="single-service">
-                            <img src="images/service/2.jpg" alt="">
-                            <!-- Service Hover -->
-                            <div id="sh-two" class="service-hover">
-                                <img src="images/icons/1.png" alt="">
-                                <span>Body Treatment</span>
-                            </div>
-                            <!-- Service Hover End -->
-                        </div>
-                        <!-- Single Service End -->
-                    </div>    
-
-                    <div class="col-sm-12 col-md-4 col-lg-3">
-                        <!-- Single Service -->
-                        <div id="free" class="single-service">
-                            <img src="images/service/3.jpg" alt="">
-                            <!-- Service Hover -->
-                            <div id="sh-free" class="service-hover">
+                            <div id="sh-one" class="service__service-hover service-one-hover">
                                 <img src="images/icons/1.png" alt="">
                                 <span>Body Treatment</span>
                             </div>
@@ -149,19 +121,47 @@
                         <!-- Single Service End -->
                     </div>
 
-                    <div class="col-sm-12 col-md-4 col-lg-3">    
+                    <div class="col-sm-12 col-md-4 col-lg-3">
                         <!-- Single Service -->
-                        <div id="four" class="single-service">
-                            <img src="images/service/4.jpg" alt="">
+                        <div id="two" class="service__single-service service__two">
+                            <img src="images/service/2.jpg" alt="">
                             <!-- Service Hover -->
-                            <div id="sh-four" class="service-hover">
+                            <div id="sh-two" class="service__service-hover">
                                 <img src="images/icons/1.png" alt="">
                                 <span>Body Treatment</span>
                             </div>
                             <!-- Service Hover End -->
                         </div>
-                    <!-- Single Service End -->
-                    </div>    
+                        <!-- Single Service End -->
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 col-lg-3">
+                        <!-- Single Service -->
+                        <div id="free" class="service__single-service service__free">
+                            <img src="images/service/3.jpg" alt="">
+                            <!-- Service Hover -->
+                            <div id="sh-free" class="service__service-hover">
+                                <img src="images/icons/1.png" alt="">
+                                <span>Body Treatment</span>
+                            </div>
+                            <!-- Service Hover End -->
+                        </div>
+                        <!-- Single Service End -->
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 col-lg-3">
+                        <!-- Single Service -->
+                        <div id="four" class="service__single-service service__four">
+                            <img src="images/service/4.jpg" alt="">
+                            <!-- Service Hover -->
+                            <div id="sh-four" class="service__service-hover">
+                                <img src="images/icons/1.png" alt="">
+                                <span>Body Treatment</span>
+                            </div>
+                            <!-- Service Hover End -->
+                        </div>
+                        <!-- Single Service End -->
+                    </div>
                 </div>
             </div>
         </section>
@@ -171,9 +171,10 @@
         <section class="procedures">
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-md-10 col-lg-8 m-auto">
+                    <div class="col-md-10 col-lg-8 mx-auto">
                         <h3 class="sec-title">Popular Procedures</h3>
-                        <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
+                        <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second
+                            every wherein were meat kind wherein and martcin</p>
                     </div>
                 </div>
                 <div class="row">
@@ -181,26 +182,29 @@
                         <article class="post">
                             <img src="images/post/1.jpg" class="img-fluid" alt="">
                             <h4><a href="services.html">Massage Therapy</a></h4>
-                            <p>Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+                            <p>Living winged said you darkness you're divide gathered and bring one seasons face great
+                                dr Waters firmament place which.</p>
                             <a href="services.html" class="btn btn-primary">read more</a>
                         </article>
-                      </div>
+                    </div>
                     <div class="col-md-4">
                         <article class="post">
                             <img src="images/post/2.jpg" class="img-fluid" alt="">
                             <h4><a href="services.html">Beauty Care</a></h4>
-                            <p>Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+                            <p>Living winged said you darkness you're divide gathered and bring one seasons face great
+                                dr Waters firmament place which.</p>
                             <a href="services.html" class="btn btn-primary">read more</a>
                         </article>
-                      </div>
-                      <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
                         <article class="post">
                             <img src="images/post/3.jpg" class="img-fluid" alt="">
                             <h4><a href="services.html">Executive Reflexology</a></h4>
-                            <p>Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+                            <p>Living winged said you darkness you're divide gathered and bring one seasons face great
+                                dr Waters firmament place which.</p>
                             <a href="services.html" class="btn btn-primary">read more</a>
                         </article>
-                      </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -210,36 +214,54 @@
         <section class="testimonial">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-lg-10 m-auto">
-                        <div id="carousel" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel" data-slide-to="1"></li>
-                            </ol>
+                    <div class="col-md-12 col-lg-10 mx-auto">
+                        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="single-tst">
                                         <img src="images/quote.png" alt="">
-                                        <p>First i beast be fruitful open you tree all Won't can't likeness and you're have whales creature seed to two grass life blessed you meat shall you winged under from their there he That you're one called gather make much red wherein set fourth green bearing fifth replenish given she had.</p>
-                        
+                                        <p>First i beast be fruitful open you tree all Won't can't likeness and you're
+                                            have whales creature seed to two grass life blessed you meat shall you
+                                            winged under from their there he That you're one called gather make much red
+                                            wherein set fourth green bearing fifth replenish given she had.</p>
+
                                         <div class="client-info">
-                                          <img src="images/client-1.png" alt="" class="thumb">
-                                          <p>Jack Marsh, <span>Executive</span></p>
+                                            <img src="images/client-1.png" alt="" class="thumb">
+                                            <p>Jack Marsh, <span>Executive</span></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="single-tst">
                                         <img src="images/quote.png" alt="">
-                                        <p>First i beast be fruitful open you tree all Won't can't likeness and you're have whales creature seed to two grass life blessed you meat shall you winged under from their there he That you're one called gather make much red wherein set fourth green bearing fifth replenish given she had.</p>
-                        
+                                        <p>First i beast be fruitful open you tree all Won't can't likeness and you're
+                                            have whales creature seed to two grass life blessed you meat shall you
+                                            winged under from their there he That you're one called gather make much red
+                                            wherein set fourth green bearing fifth replenish given she had.</p>
+
                                         <div class="client-info">
-                                          <img src="images/client-1.png" alt="" class="thumb">
-                                          <p>Jack Marsh, <span>Executive</span></p>
+                                            <img src="images/client-1.png" alt="" class="thumb">
+                                            <p>Jack Marsh, <span>Executive</span></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -251,10 +273,11 @@
         <section class="team">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-lg-8 m-auto">
+                    <div class="col-md-10 col-lg-8 mx-auto">
                         <div class="section-heading">
                             <h3 class="sec-title">Experienced Team</h3>
-                            <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
+                            <p>To doesn't his appear replenish together called he of mad place won't wherein blessed
+                                second every wherein were meat kind wherein and martcin</p>
                         </div>
                     </div>
                 </div>
@@ -276,7 +299,7 @@
                                         <li><a href="#" target="_blank" class="yt">Youtube</a></li>
                                         <li><a href="#" target="_blank" class="in">Instagram</a></li>
                                     </ul>
-                                  </div>
+                                </div>
                                 <!-- Member Social End -->
                             </div>
                             <!-- Member Info End -->
@@ -289,7 +312,7 @@
                             <div id="memb-info-second" class="memb-info">
                                 <h6>David Hannan</h6>
                                 <span>Thai Message</span>
-                                
+
                                 <div id="memb-social-second" class="memb-social">
                                     <ul class="soc-net">
                                         <li><a href="#" target="_blank" class="fb">Facebook></a></li>
@@ -307,7 +330,7 @@
                             <div id="memb-info-third" class="memb-info">
                                 <h6>Cheryl Harris</h6>
                                 <span>Thai Message</span>
-                                
+
                                 <div id="memb-social-third" class="memb-social">
                                     <ul class="soc-net">
                                         <li><a href="#" target="_blank" class="fb">Facebook></a></li>
@@ -328,41 +351,43 @@
         <section class="appointment">
             <div class="appointment-wrap">
                 <div class="figure">
-                <img src="images/appointment-img.jpg" class="img-fluid" alt="Appointment">
+                    <img src="images/appointment-img.jpg" class="img-fluid" alt="Appointment">
                 </div>
                 <div class="appointment-form">
                     <form action="#">
                         <div class="container">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <input type="text" placeholder="Name" class="input-field" required>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <input type="email" placeholder="Email address" class="input-field" required>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <select class="input-field">
                                         <option>Select service</option>
                                         <option>Select service 1</option>
                                     </select>
 
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <input type="tel" placeholder="Phone numer" class="input-field">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <input type="date" placeholder="date" class="input-field">
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <input type="time" placeholder="time" class="input-field">
                                 </div>
                             </div>
                             <textarea name="notes" placeholder="Your notes" class="input-field"></textarea>
-                            <button class="btn btn-primary">Make an Appointment</button>
+                            <div class="btn-appointment text-center">
+                                <button class="btn btn-primary btn-appointment">Make an Appointment</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -382,7 +407,7 @@
                         <img src="images/logo.png" alt="Logo">
                     </a>
                     <nav class="footer-nav">
-                        <ul class="footer-soc-net"> 
+                        <ul class="footer-soc-net">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">feature</a></li>
@@ -398,7 +423,8 @@
                             <li><a href="#" target="_blank" class="in">Instagram</a></li>
                         </ul>
                     </div>
-                    <p class="copyright">&copy; COPYRIGHT 2019 <a href="https://themeies.com">themeies.com.</a> ALL RIGHTS RESERVED.</p>
+                    <p class="copyright">&copy; COPYRIGHT 2019 <a href="https://themeies.com">themeies.com.</a> ALL
+                        RIGHTS RESERVED.</p>
                 </div>
             </div>
         </div>
@@ -407,9 +433,10 @@
 
 
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
